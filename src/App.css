@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+.main-container{
+    margin:50px 150px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-container{
+    display: flex;
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box1{
+    width:100%;
+    height:20px;
+    padding:15px;
+    text-align: center;
+    background-color: pink;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.box2{
+    padding:15px;    
+    height:100px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+#logo{
+    margin-left: 582px  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#auth{
+    display: flex;
+    flex-direction: row;
+    float:right;
+}
+
+#auth >div{
+    padding:20px
+}
+
+.box3{
+    padding:5px;
+    background-color: black;
+    color:pink;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contents{
+    margin: 100px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content > img{
+    width:250px;
+    height:360px;
+}
+
+.id-delivery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+}
+
+#content-id{
+    color:grey;
+}
+
+#express-delivery{
+    background-color: pink;
+    padding:5px;
+}
+
+#content-name{
+    font-size: larger;
+    font-weight: 500;
+}
+
+
+.content>hr{
+    border-color: pink;
+}
+
+
+
+
+.footer{
+    height:400px;
+    margin:0 auto;
+    padding:20px; 
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer>.box-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box-container>.box{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.box>.socials{
+    display: flex;
+    flex-direction: row;
+}
+
+.socials>div{
+    width:40px;
+    height:40px;
+    border: 1px solid black;
+    margin:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
