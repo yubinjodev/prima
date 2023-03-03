@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
+import { LoginModal } from "./components/LoginModal";
 
 function App() {
   const allRoutes = [
@@ -17,6 +18,7 @@ function App() {
   ];
   return (
     <BrowserRouter>
+    <LoginModal/>
       <Navbar />
       <Routes>
         {allRoutes.map((route, index) => {

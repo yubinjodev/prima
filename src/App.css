@@ -180,3 +180,62 @@
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
   
+
+  .modal{
+    width:600px;
+   height:330px;
+   padding:45px 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: space-between;
+  }
+
+  .modal > *{
+    padding:20px;
+  }
+
+  .exit-button, .login-button{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .input-modal{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-modal>*{
+    padding: 10px 0px;
+  }
+
+
+.buttons-modal{
+    
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    
+}
+
+input{
+    width:516px;
+    height:20px;
+    padding:12px;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+input:focus{
+    border:1px solid lightskyblue;
+    box-shadow: rgba(102, 153, 204, 0.35) 0px 5px 15px;
+    outline:none;
+}
+
+.login-button >button{
+    
+    padding:10px 45px;
+    background-color: pink;
+    border: none;
+}
+

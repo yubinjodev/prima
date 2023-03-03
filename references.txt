@@ -1,0 +1,29 @@
+How TO - Hoverable Dropdown
+https://www.w3schools.com/howto/howto_css_dropdown.asp
+
+storing images in a react app
+https://www.upbeatcode.com/react/where-to-store-images-in-react-app/
+
+
+css flexbox
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+
+
+
+
+
+libraries & packages used
+image slideshow
+https://www.npmjs.com/package/react-slideshow-image
+
+react-icons
+https://react-icons.github.io/react-icons   
+
+
+I would like to thank these people/organizations for guiding me through my development
+ben awad
+w3school
+stackoverflow
+chris coyier (css tricks)
