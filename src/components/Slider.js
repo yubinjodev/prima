@@ -7,6 +7,7 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
 const divStyle = {
+  marginBottom:"80px",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",

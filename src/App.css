@@ -2,6 +2,12 @@
     margin:50px 150px;
 }
 
+.page-title{
+    font-size: large;
+    text-align: center;
+    padding:10px;
+}
+
 .navbar-container{
     display: flex;
     flex-direction: column;
@@ -26,13 +32,15 @@
 }
 
 #logo{
-    margin-left: 582px  
+    margin-left: 582px;
+    cursor:pointer;
 }
 
 #auth{
     display: flex;
     flex-direction: row;
     float:right;
+    cursor: pointer;
 }
 
 #auth >div{
@@ -49,9 +57,9 @@
 }
 
 .contents{
-    margin: 100px 0px;
     display: flex;
     flex-direction: row;
+    align-content: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
 }

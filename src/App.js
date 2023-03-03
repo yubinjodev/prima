@@ -2,9 +2,10 @@ import "./App.css";
 
 import { Home } from "./pages/Home";
 import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Footer } from "./components/Footer";
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   const allRoutes = [
@@ -24,7 +25,8 @@ function App() {
           );
         })}
       </Routes>
-      <Footer/>
+      <ScrollToTop smooth />
+      <Footer />
     </BrowserRouter>
   );
 }
