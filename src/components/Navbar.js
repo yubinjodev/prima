@@ -1,16 +1,19 @@
 import Logo from "../assets/grishkologo.png";
 
+import { useNavigate } from "react-router-dom";
+
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineSearch } from "react-icons/ai";
 
 export const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <div className="navbar-container">
       <div className="box1">WORLDWIDE DELIVERY.</div>
 
       <div className="box2">
-        <div id="logo">
+        <div id="logo" onClick={() => navigate("/")}>
           <img src={Logo} alt="logo" />
         </div>
         <div id="auth">
@@ -30,13 +33,106 @@ export const Navbar = () => {
       </div>
 
       <div className="box3">
-        <div>DANCE SHOES</div>
-        <div>DANCE WEAR</div>
-        <div>KIDS</div>
-        <div>COLLECTIONS</div>
-        <div>ACCESSORIES</div>
-        <div>MEDIA</div>
-        <div>LAST CHANCE TO BUY</div>
+        <div className="dropdown">
+          <button className="dropbtn">DANCE SHOES</button>
+          <div className="dropdown-content">
+            <div>Pointe Shoes Line Up</div>
+            <div>Pointe Shoes - Skin tone</div>
+            <div>Ballroom & Latin</div>
+            <div>Tap Shoes</div>
+            <div>Stage Shoes</div>
+            <div>Folk & Character Shoes</div>
+            <div>Pointe Shoes</div>
+            <div>Ballet boots</div>
+            <div>Warm-up Boots</div>
+            <div>Ballet Shoe - Slippers</div>
+            <div>Lyrical & Gymastic Shoes</div>
+            <div>Jazz Shoes</div>
+          </div>
+        </div>
+
+        <div className="dropdown">
+          <button className="dropbtn">DANCE WEAR</button>
+          <div className="dropdown-content">
+            <div>Leotards</div>
+            <div>Skirts & tutus</div>
+            <div>Leggings</div>
+            <div>Tights</div>
+            <div>Heat Retention Wear</div>
+            <div>Unitards</div>
+            <div>T-shirt & jumpers</div>
+            <div>Pants and shorts</div>
+            <div>Seamless underwear</div>
+            <div>Knitted warm-up</div>
+            <div>Boys` and Mens`</div>
+          </div>
+        </div>
+
+        <div className="dropdown">
+          <button className="dropbtn">KIDS</button>
+          <div className="dropdown-content">
+            <div>Kids ballet shoes</div>
+            <div>Kids Stage Costumes</div>
+            <div>Kids dancewear</div>
+            <div>Future Stars</div>
+          </div>
+        </div>
+
+        <div className="dropdown">
+          <button className="dropbtn">COLLECTIONS</button>
+          <div className="dropdown-content">
+            <div>Mystique</div>
+            <div>Black Label V</div>
+            <div>Bolshoi Stars. Magnifique</div>
+            <div>Bolshoi Stars. Monarch</div>
+            <div>Black Label IV</div>
+            <div>Bolshoi Stars. The Dream</div>
+            <div>Bolshoi Stars</div>
+            <div>Boundless Collection</div>
+            <div>New Base Collection</div>
+            <div>Classic Excellence</div>
+            <div>Grishko Academy</div>
+            <div>Knitted warm-up 2021</div>
+            <div>Bolshoi Stars. Jewel</div>
+            <div>Future Stars</div>
+          </div>
+        </div>
+
+        <div className="dropdown">
+          <button className="dropbtn">ACCESSORIES</button>
+          <div className="dropdown-content">
+            <div>Pointe Shoe accessories</div>
+            <div>Bags & Cases</div>
+            <div>Gifts</div>
+            <div>Dance Accessories</div>
+            <div>Hair accessories</div>
+          </div>
+        </div>
+
+        <div className="dropdown">
+          <button className="dropbtn">MEDIA</button>
+          <div className="dropdown-content">
+            <div>Ambassdors</div>
+            <div>Catalogs</div>
+            <div>Wallpapers</div>
+            <div>Download your media files</div>
+            <div>Blog</div>
+            <div>Stores</div>
+            <div>Grishko Partners</div>
+            <div>Everything Grishko in one video</div>
+          </div>
+        </div>
+
+        <div className="dropdown">
+          <button className="dropbtn">LAST CHANCE TO BUY</button>
+          <div className="dropdown-content">
+            <div>Pointe Shoes</div>
+            <div>Slippers</div>
+            <div>Accessories</div>
+            <div>Dance Wear</div>
+            <div>Dance Wear Basics</div>
+          </div>
+        </div>
       </div>
     </div>
   );
