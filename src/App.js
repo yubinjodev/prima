@@ -10,6 +10,7 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
 import { Register } from "./pages/Register";
+import { Contact } from "./pages/Contact";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -24,6 +25,11 @@ function App() {
       name: "Registration",
       path: "/registration",
       element: <Register />,
+    },
+    {
+      name: "Contact us",
+      path: "/contact-us",
+      element: <Contact />,
     },
   ];
   return (
