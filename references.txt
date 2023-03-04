@@ -8,6 +8,9 @@ https://www.upbeatcode.com/react/where-to-store-images-in-react-app/
 css flexbox
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
+usecontext
+https://www.youtube.com/watch?v=lhMKvyLRWo0
+
 
 
 

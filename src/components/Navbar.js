@@ -1,5 +1,7 @@
 import Logo from "../assets/grishkologo.png";
+import { ModalContext } from "../context/ModalContext";
 
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { AiOutlineShoppingCart } from "react-icons/ai";
@@ -7,7 +9,9 @@ import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineSearch } from "react-icons/ai";
 
 export const Navbar = () => {
+  const { showModal, setShowModal } = useContext(ModalContext);
   const navigate = useNavigate();
+
   return (
     <div className="navbar-container">
       <div className="box1">WORLDWIDE DELIVERY.</div>
@@ -17,7 +21,13 @@ export const Navbar = () => {
           <img src={Logo} alt="logo" />
         </div>
         <div id="auth">
-          <div>Log-in</div>
+          <div
+            onClick={() => {
+              setShowModal(true);
+            }}
+          >
+            Log-in
+          </div>
           <div>Registration</div>
           <div>CONTACT US</div>
           <div>

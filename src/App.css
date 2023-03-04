@@ -180,15 +180,45 @@
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
   
+.modal-container{
+    width: 100%;
+    height: 100%;
+    background: #333333bd;
+    left: 0 !important;
+    top: 0 !important;
+    position:absolute;
+    z-index: 1;
+    animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 
   .modal{
     width:600px;
    height:330px;
    padding:45px 20px;
+   background-color: white;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-content: space-between;
+   position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+   
+  }
+
+  .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .modal > *{
