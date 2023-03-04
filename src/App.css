@@ -69,6 +69,10 @@
     height:360px;
 }
 
+.content{
+    padding:15px;
+}
+
 .id-delivery{
     display: flex;
     flex-direction: row;
@@ -253,19 +257,54 @@ input{
     height:20px;
     padding:12px;
     background-color: white;
-    border: 1px solid grey;
+    border: 1px solid lightgray;
 }
 
-input:focus{
+input[type="radio"]{
+    width: 15px;
+    height:15px;
+}
+
+
+label{
+    color:gray;
+}
+
+input:focus, select:focus{
     border:1px solid lightskyblue;
     box-shadow: rgba(102, 153, 204, 0.35) 0px 5px 15px;
     outline:none;
 }
 
-.login-button >button{
-    
+.login-button >button{ 
     padding:10px 45px;
     background-color: pink;
     border: none;
 }
+.register{
+    margin:25px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
 
+.register>*{
+    padding:5px;
+}
+
+.register-button>button{
+    padding: 15px 120px;
+    background-color: pink;
+    border: none;
+}
+
+.radio{
+    display: flex;
+    flex-direction: row;
+}
+
+select{
+    width:516px;
+    height:35px;
+}

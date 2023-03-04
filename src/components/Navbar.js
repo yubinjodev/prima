@@ -28,7 +28,7 @@ export const Navbar = () => {
           >
             Log-in
           </div>
-          <div>Registration</div>
+          <div onClick={() => navigate("/registration")}>Registration</div>
           <div>CONTACT US</div>
           <div>
             <AiOutlineShoppingCart />

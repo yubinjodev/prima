@@ -71,7 +71,6 @@ export const Contents = () => {
           </div>
           <div id="content-name">{content.name}</div>
           <div id="content-price">{content.price}</div>
-          <hr/>
         </div>
       ))}
     </div>
