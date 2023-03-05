@@ -1,17 +1,17 @@
 import { useContext } from "react";
-import { ModalContext } from "../context/ModalContext";
+import { LoginContext } from "../context/LoginContext";
 
 export const LoginModal = () => {
-  const { showModal, setShowModal } = useContext(ModalContext);
+  const { showLoginModal, setshowLoginModal  } = useContext(LoginContext);
   return (
     <>
-      {showModal ? (
+      {showLoginModal ? (
         <div className="modal-container">
           <form className="modal">
             <div className="exit-button">
               <button
                 onClick={() => {
-                  setShowModal(false);
+                  setshowLoginModal(false);
                 }}
               >
                 X

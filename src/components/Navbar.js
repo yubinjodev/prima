@@ -1,5 +1,5 @@
 import Logo from "../assets/grishkologo.png";
-import { ModalContext } from "../context/ModalContext";
+import { LoginContext } from "../context/LoginContext";
 
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
@@ -7,9 +7,13 @@ import { useNavigate } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineSearch } from "react-icons/ai";
+import { BasketContext } from "../context/BasketContext";
+import { SearchContext } from "../context/SearchContext";
 
 export const Navbar = () => {
-  const { showModal, setShowModal } = useContext(ModalContext);
+  const { showLoginModal, setshowLoginModal } = useContext(LoginContext);
+  const { showBasketModal, setBasketModal } = useContext(BasketContext);
+  const { showSearch, setSearch } = useContext(SearchContext);
   const navigate = useNavigate();
 
   return (
@@ -23,20 +27,28 @@ export const Navbar = () => {
         <div id="auth">
           <div
             onClick={() => {
-              setShowModal(true);
+              setshowLoginModal(true);
             }}
           >
             Log-in
           </div>
           <div onClick={() => navigate("/registration")}>Registration</div>
-          <div onClick={()=>navigate("/contact-us")}>CONTACT US</div>
-          <div>
+          <div onClick={() => navigate("/contact-us")}>CONTACT US</div>
+          <div
+            onClick={() => {
+              setBasketModal(true);
+            }}
+          >
             <AiOutlineShoppingCart />
           </div>
-          <div>
+          <div onClick={() => navigate("/contact-us")}>
             <AiOutlineMail />
           </div>
-          <div>
+          <div
+            onClick={() => {
+              setSearch(true);
+            }}
+          >
             <AiOutlineSearch />
           </div>
         </div>

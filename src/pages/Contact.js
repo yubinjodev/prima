@@ -1,11 +1,15 @@
 export const Contact = () => {
   return (
-    <form className="main-container">
+    <form className="contact">
       <h3>CONTACT US</h3>
-      <input readOnly value="orders@grishkoshop.com"/>
-      <input type="email" placeholder="enter your e-mail address here ..."/>
+      <label>TO.</label>
+      <input readOnly value="orders@grishkoshop.com" />
+      <label>FROM</label>
+      <input type="email" placeholder="enter your e-mail address here ..." />
       <textarea></textarea>
-      <button>CONTACT US</button>
+      <div className="contact-button">
+        <button>CONTACT US</button>
+      </div>
     </form>
   );
 };

@@ -270,18 +270,24 @@ label{
     color:gray;
 }
 
-input:focus, select:focus{
+input:focus, select:focus,textarea:focus{
     border:1px solid lightskyblue;
     box-shadow: rgba(102, 153, 204, 0.35) 0px 5px 15px;
     outline:none;
 }
 
-.login-button >button{ 
+.login-button >button, .checkout-button>button{ 
     padding:10px 45px;
     background-color: pink;
     border: none;
 }
-.register{
+
+.secondary-button{
+    background-color: white !important;
+    border: 1px solid black !important;
+}
+
+.register,.contact{
     margin:25px 50px;
     display: flex;
     flex-direction: column;
@@ -289,11 +295,11 @@ input:focus, select:focus{
     
 }
 
-.register>*{
-    padding:5px;
+.register>*,.contact>*{
+    margin:5px;
 }
 
-.register-button>button{
+.register-button>button, .contact-button>button{
     padding: 15px 120px;
     background-color: pink;
     border: none;
@@ -307,4 +313,27 @@ input:focus, select:focus{
 select{
     width:516px;
     height:35px;
+}
+
+textarea{
+    width: 516px;
+    height: 100px;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+.checkout-button{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.checkout-button>*{
+    margin:5px;
+}
+
+.subtotal{
+    display: flex;
+    justify-content: flex-end;
 }
