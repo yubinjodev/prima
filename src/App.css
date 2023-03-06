@@ -195,6 +195,10 @@
     animation: fade-in 1s;
 }
 
+#search{
+    background: rgba(255, 192, 203, 0.637);
+}
+
 @keyframes fade-in {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -337,3 +341,29 @@ textarea{
     display: flex;
     justify-content: flex-end;
 }
+
+.search-modal{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:15px;
+}
+
+.search-modal>.exit-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-input{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top:20%;
+}
+
+.search-input>button{
+    padding:15px;
+    background-color: black;
+    color:white
+}
+

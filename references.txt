@@ -32,3 +32,4 @@ stackoverflow
 chris coyier (css tricks)
 
 i should make my css file cleaner.
+inputs and buttons are always the same with different style variations.

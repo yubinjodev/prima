@@ -14,6 +14,7 @@ import { Contact } from "./pages/Contact";
 import { BasketModal } from "./components/BasketModal";
 import { BasketContext } from "./context/BasketContext";
 import { SearchContext } from "./context/SearchContext";
+import { SearchModal } from "./components/SearchModal";
 
 function App() {
   const [showLoginModal, setshowLoginModal] = useState(false);
@@ -38,7 +39,6 @@ function App() {
     },
   ];
 
-  console.log(showSearch)
   return (
     <BrowserRouter>
       <LoginContext.Provider value={{ showLoginModal, setshowLoginModal }}>
@@ -46,6 +46,7 @@ function App() {
           <SearchContext.Provider value={{ showSearch, setSearch }}>
             <BasketModal />
             <LoginModal />
+            <SearchModal/>
             <Navbar />
           </SearchContext.Provider>
         </BasketContext.Provider>

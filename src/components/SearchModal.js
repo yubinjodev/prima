@@ -6,17 +6,22 @@ export const SearchModal = () => {
   return (
     <>
       {showSearch ? (
-        <div className="modal-container">
-          <form className="modal">
-            <input />
-            <button>search</button>
-            <button
-              onClick={() => {
-                setSearch(false);
-              }}
-            >
-              X
-            </button>
+        <div id="search"className="modal-container">
+          <form className="search-modal">
+            <div className="exit-button">
+              <button
+                onClick={() => {
+                  setSearch(false);
+                }}
+              >
+                X
+              </button>
+            </div>
+
+            <div className="search-input">
+              <input placeholder="Searched expression ..."/>
+              <button>Search</button>
+            </div>
           </form>
         </div>
       ) : (
