@@ -30,3 +30,5 @@ ben awad
 w3school
 stackoverflow
 chris coyier (css tricks)
+
+i should make my css file cleaner.
