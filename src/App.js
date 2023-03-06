@@ -15,6 +15,7 @@ import { BasketModal } from "./components/BasketModal";
 import { BasketContext } from "./context/BasketContext";
 import { SearchContext } from "./context/SearchContext";
 import { SearchModal } from "./components/SearchModal";
+import { ContentDetail } from "./pages/ContentDetail";
 
 function App() {
   const [showLoginModal, setshowLoginModal] = useState(false);
@@ -36,6 +37,11 @@ function App() {
       name: "Contact us",
       path: "/contact-us",
       element: <Contact />,
+    },
+    {
+      name: "Content Detail",
+      path: "/content-detail",
+      element: <ContentDetail />,
     },
   ];
 

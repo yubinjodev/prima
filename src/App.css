@@ -1,3 +1,8 @@
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 .main-container{
     margin:50px 150px;
 }
@@ -32,14 +37,15 @@
 }
 
 #logo{
-    margin-left: 582px;
+    display: flex;
+    justify-content: center;
     cursor:pointer;
 }
 
 #auth{
     display: flex;
     flex-direction: row;
-    float:right;
+    justify-content: flex-end;
     cursor: pointer;
 }
 
@@ -61,7 +67,6 @@
     flex-direction: row;
     align-content: flex-start;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .content > img{
@@ -69,8 +74,10 @@
     height:360px;
 }
 
+
 .content{
-    padding:15px;
+    padding:44px;
+    cursor: pointer;
 }
 
 .id-delivery{
@@ -199,10 +206,7 @@
     background: rgba(255, 192, 203, 0.637);
 }
 
-@keyframes fade-in {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+
 
 
   .modal{
