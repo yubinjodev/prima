@@ -34,12 +34,12 @@ export const Navbar = () => {
           </div>
           <div onClick={() => navigate("/registration")}>Registration</div>
           <div onClick={() => navigate("/contact-us")}>CONTACT US</div>
-          <div
-            onClick={() => {
-              setBasketModal(true);
-            }}
-          >
-            <AiOutlineShoppingCart />
+          <div>
+            <AiOutlineShoppingCart
+              onClick={() => {
+                setBasketModal(true);
+              }}
+            />
           </div>
           <div onClick={() => navigate("/contact-us")}>
             <AiOutlineMail />

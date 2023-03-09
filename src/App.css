@@ -4,7 +4,7 @@
   }
 
 .main-container{
-    margin:50px 150px;
+    margin:50px 100px;
 }
 
 .page-title{
@@ -27,19 +27,24 @@
 }
 
 .box2{
+    display: grid;
+    grid-template-rows: auto 1fr;
     padding:15px;    
+    height:100px;
+    /* padding:15px;    
     height:100px;
     display: flex;
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 }
 
 #logo{
     display: flex;
     justify-content: center;
     cursor:pointer;
+    
 }
 
 #auth{
@@ -47,10 +52,14 @@
     flex-direction: row;
     justify-content: flex-end;
     cursor: pointer;
+    grid-column: 3;
 }
 
 #auth >div{
-    padding:20px
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .box3{
@@ -59,7 +68,7 @@
     color:pink;
     display:flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .contents{
@@ -103,7 +112,7 @@
 }
 
 
-.content>hr{
+hr{
     border-color: pink;
 }
 
@@ -371,3 +380,66 @@ textarea{
     color:white
 }
 
+.content-detail-container{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.main-interaction-point{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+
+.interaction{
+    display: flex;
+    flex-direction: column;
+    gap:45px;
+}
+
+.detail-nav{
+    font-size: smaller;
+    color:grey
+}
+
+.buy{
+    display:flex;
+    flex-direction: column;
+}
+
+.buy>button{ 
+    height:20px;
+    width:50px;
+    padding:10px 45px;
+    background-color: pink;
+    border: none;
+    
+    
+}
+.promo-details{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+.promo-image{
+    width:250px;
+    height:360px;
+}
+
+.shop-more{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    justify-content: center;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom > *{
+    text-align: center;
+
+}
