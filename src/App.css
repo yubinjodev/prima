@@ -55,7 +55,7 @@
     grid-column: 3;
 }
 
-#auth >div{
+#auth div{
     padding:10px;
     display:flex;
     justify-content: center;
@@ -72,22 +72,29 @@
 }
 
 .contents{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:44px;
+    
+    /* display: flex;
+    justify-content: space-between;
     flex-direction: row;
     align-content: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    
 }
-
-.content > img{
+.content{
+    width:250px;
+    cursor: pointer;
+}
+.content   img{
     width:250px;
     height:360px;
 }
 
 
-.content{
-    padding:44px;
-    cursor: pointer;
-}
+
 
 .id-delivery{
     display: flex;
@@ -128,24 +135,25 @@ hr{
     flex-direction: column;
 }
 
-.footer>.box-container{
+.footer .box-container{
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 45px;
 }
 
-.box-container>.box{
+.box-container .box{
 
     display: flex;
     flex-direction: column;
 }
 
-.box>.socials{
+.box .socials{
     display: flex;
     flex-direction: row;
 }
 
-.socials>div{
+.socials div{
     width:40px;
     height:40px;
     border: 1px solid black;
@@ -242,7 +250,7 @@ hr{
     transform: translate(-50%, -50%);
   }
 
-  .modal > *{
+  .modal > * {
     padding:20px;
   }
 
@@ -250,13 +258,16 @@ hr{
     display: flex;
     justify-content: flex-end;
   }
+  .exit-button button{
+    
+  }
 
   .input-modal{
     display: flex;
     flex-direction: column;
   }
 
-  .input-modal>*{
+  .input-modal *{
     padding: 10px 0px;
   }
 
@@ -293,7 +304,7 @@ input:focus, select:focus,textarea:focus{
     outline:none;
 }
 
-.login-button >button, .checkout-button>button{ 
+.login-button  button, .checkout-button button, .buy button, .buy-button{ 
     padding:10px 45px;
     background-color: pink;
     border: none;
@@ -312,11 +323,11 @@ input:focus, select:focus,textarea:focus{
     
 }
 
-.register>*,.contact>*{
+.register *,.contact *{
     margin:5px;
 }
 
-.register-button>button, .contact-button>button{
+.register-button button, .contact-button button{
     padding: 15px 120px;
     background-color: pink;
     border: none;
@@ -346,7 +357,7 @@ textarea{
     
 }
 
-.checkout-button>*{
+.checkout-button *{
     margin:5px;
 }
 
@@ -362,7 +373,7 @@ textarea{
     margin:15px;
 }
 
-.search-modal>.exit-button{
+.search-modal .exit-button{
     display: flex;
     justify-content: flex-end;
 }
@@ -374,7 +385,7 @@ textarea{
     margin-top:20%;
 }
 
-.search-input>button{
+.search-input button{
     padding:15px;
     background-color: black;
     color:white
@@ -403,20 +414,8 @@ textarea{
     color:grey
 }
 
-.buy{
-    display:flex;
-    flex-direction: column;
-}
 
-.buy>button{ 
-    height:20px;
-    width:50px;
-    padding:10px 45px;
-    background-color: pink;
-    border: none;
-    
-    
-}
+
 .promo-details{
     display: flex;
     flex-direction: row;
@@ -437,9 +436,14 @@ textarea{
 .bottom{
     display: flex;
     flex-direction: row;
+    gap:30px;
 }
 
-.bottom > *{
+.bottom   *{
     text-align: center;
 
+}
+
+.buy >*{
+    
 }

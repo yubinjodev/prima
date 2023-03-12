@@ -16,27 +16,23 @@ export const ContentDetail = () => {
 
             <div>
               <h3>0002/5 Elastic ribbon with Grishko logo, 1m</h3>
-              <button>EXPRESS DELIVERY</button>
+              <button className="buy-button">EXPRESS DELIVERY</button>
             </div>
 
             <div className="buy">
               <div>Color</div>
-              <div>
-                <button>Beige</button>
-              </div>
+              <button>Beige</button>
               <div>Quantity</div>
               <input />
-              <div>
-                <button>Add to the basket</button>
-              </div>
+              <button>Add to the basket</button>
             </div>
 
             <div>
-              <hr/>
+              <hr />
               <div>+ Description</div>
-              <hr/>
+              <hr />
               <div>+ Parameters</div>
-              <hr/>
+              <hr />
             </div>
           </div>
         </section>
