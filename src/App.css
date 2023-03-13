@@ -28,7 +28,8 @@
 
 .box2{
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     padding:15px;    
     height:100px;
     /* padding:15px;    
@@ -41,10 +42,11 @@
 }
 
 #logo{
+    grid-column: 2/3;
+    cursor:pointer;
+    justify-content: center;
     display: flex;
     justify-content: center;
-    cursor:pointer;
-    
 }
 
 #auth{
@@ -52,14 +54,11 @@
     flex-direction: row;
     justify-content: flex-end;
     cursor: pointer;
-    grid-column: 3;
+    grid-column: 3/4;
 }
 
 #auth div{
     padding:10px;
-    display:flex;
-    justify-content: center;
-    align-content: center;
 }
 
 .box3{
@@ -75,7 +74,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap:44px;
+    grid-gap:44px;
     
     /* display: flex;
     justify-content: space-between;
@@ -305,7 +304,7 @@ input:focus, select:focus,textarea:focus{
 }
 
 .login-button  button, .checkout-button button, .buy button, .buy-button{ 
-    padding:10px 45px;
+    padding:10px 45px !important;
     background-color: pink;
     border: none;
 }
@@ -444,6 +443,9 @@ textarea{
 
 }
 
-.buy >*{
-    
+.buy {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width:200px;
 }
