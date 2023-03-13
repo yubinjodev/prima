@@ -2,12 +2,18 @@ import elasticribbon from "../assets/elasticribbon.png";
 import dreampointe from "../assets/dreampointe.png";
 import asc from "../assets/AdultSynergyCanvas.png";
 
+import { useEffect } from "react";
+
 export const ContentDetail = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="main-container">
       <main className="content-detail-container">
         <section className="main-interaction-point">
-          <img src={elasticribbon} />
+          <img alt="ribbon" src={elasticribbon} />
           <div className="interaction">
             <nav className="detail-nav">
               ACCESSORIES | POINTE SHOE ACCESSORIES | 0002/5 ELASTIC RIBBON WITH
@@ -41,13 +47,13 @@ export const ContentDetail = () => {
           <h3>YOU MAY ALSO LIKE</h3>
           <div className="promo-details">
             <div>
-              <img className="promo-image" src={dreampointe} />
+              <img alt="dreampointe" className="promo-image" src={dreampointe} />
               <div>0002/3 Elastic ribbon, 25m</div>
               <div>2.90 USD</div>
             </div>
 
             <div>
-              <img className="promo-image" src={asc} />
+              <img  alt="asc"className="promo-image" src={asc} />
               <div>0002/3 Elastic ribbon, 25m</div>
               <div>2.90 USD</div>
             </div>

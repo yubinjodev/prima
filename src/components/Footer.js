@@ -1,53 +1,61 @@
+import grishkologo from "../assets/grishkologo.png";
+
 import { AiOutlineInstagram } from "react-icons/ai";
 import { AiOutlineFacebook } from "react-icons/ai";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa";
 import { AiFillWechat } from "react-icons/ai";
 
+import { saveAs } from "file-saver";
+
 export const Footer = () => {
+  const downloadImage = () => {
+    saveAs(grishkologo, "grishko-logo.jpg");
+  };
+
   return (
     <div className="footer">
       <div className="box-container">
         <div className="box">
           <h4>INFORMATION</h4>
-          <div>About us</div>
-          <div>About Grishko</div>
-          <div>Why Grishko?</div>
-          <div>Our Advantages</div>
-          <div>Contact us</div>
-          <div>Privary Policy</div>
-          <div>Grish Partners</div>
-          <div>Download GRISHKO logo</div>
+          <a href="/about-us">About us</a>
+          <a href="/about-grishko">About Grishko</a>
+          <a href="/why-grishko">Why Grishko?</a>
+          <a href="/advantages">Our Advantages</a>
+          <a href="/contact-us">Contact us</a>
+          <a href="/privacy-policy">Privary Policy</a>
+          <a href="/grishko-partners">Grishko Partners</a>
+          <div onClick={downloadImage}>Download GRISHKO logo</div>
         </div>
 
         <div className="box">
           <h4>HELP & SUPPORT</h4>
-          <div>Return Policy</div>
-          <div>Delivery</div>
-          <div>Terms of Sale</div>
-          <div>Privacy and Guarantees</div>
-          <div>How to make a purchase</div>
+          <a href="/return-policy">Return Policy</a >
+          <a href="/delivery">Delivery</a >
+          <a href="/terms-of-sale">Terms of Sale</a >
+          <a href="/privacy-guarantee">Privacy and Guarantees</a >
+          <a href="tutorial">How to make a purchase</a >
         </div>
 
         <div className="box">
           <h4>FITTING GUIDE</h4>
-          <div>Ask a fitter</div>
-          <div>Pointe shoes size chart</div>
-          <div>Pointe shoes cheat sheets</div>
-          <div>Dancewear size chart</div>
-          <div>Ballet slippers size chart</div>
-          <div>Warm up boots size chart</div>
-          <div>Jazz, Folk and rehearsal shoe measures</div>
-          <div>Men`s costumes</div>
-          <div>Woman`s costumes</div>
+          <a href="/fitter">Ask a fitter</a>
+          <a href="/size-chart">Pointe shoes size chart</a>
+          <a href="/cheat-sheet">Pointe shoes cheat sheets</a>
+          <a href="/dacewear-size-chart">Dancewear size chart</a>
+          <a href="/slippers-size-chart">Ballet slippers size chart</a>
+          <a href="/warmupboots-size-chart">Warm up boots size chart</a>
+          <a href="/other-size-chart">Jazz, Folk and rehearsal shoe measures</a>
+          <a href="/mens-costumes">Men`s costumes</a>
+          <a href="/womens-costumes">Woman`s costumes</a>
         </div>
 
         <div className="box">
           <h4>FOR PARTNERS</h4>
-          <div>My invoices</div>
-          <div>My orders</div>
-          <div>Become a Partner</div>
-          <div>Become an Ambassador</div>
+          <a href="/my-invoices">My invoices</a>
+          <a href="/my-orders">My orders</a>
+          <a href="/become-partner">Become a Partner</a>
+          <a href="/become-ambassador">Become an Ambassador</a>
         </div>
 
         <div className="box">

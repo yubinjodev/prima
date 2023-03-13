@@ -11,9 +11,9 @@ import { BasketContext } from "../context/BasketContext";
 import { SearchContext } from "../context/SearchContext";
 
 export const Navbar = () => {
-  const { showLoginModal, setshowLoginModal } = useContext(LoginContext);
-  const { showBasketModal, setBasketModal } = useContext(BasketContext);
-  const { showSearch, setSearch } = useContext(SearchContext);
+  const { setshowLoginModal } = useContext(LoginContext);
+  const { setBasketModal } = useContext(BasketContext);
+  const { setSearch } = useContext(SearchContext);
   const navigate = useNavigate();
 
   return (
