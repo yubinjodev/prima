@@ -4,7 +4,7 @@
   }
 
 .main-container{
-    margin:50px 150px;
+    margin:50px 100px;
 }
 
 .page-title{
@@ -27,19 +27,26 @@
 }
 
 .box2{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     padding:15px;    
+    height:100px;
+    /* padding:15px;    
     height:100px;
     display: flex;
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 }
 
 #logo{
+    grid-column: 2/3;
+    cursor:pointer;
+    justify-content: center;
     display: flex;
     justify-content: center;
-    cursor:pointer;
 }
 
 #auth{
@@ -47,10 +54,11 @@
     flex-direction: row;
     justify-content: flex-end;
     cursor: pointer;
+    grid-column: 3/4;
 }
 
-#auth >div{
-    padding:20px
+#auth div{
+    padding:10px;
 }
 
 .box3{
@@ -59,26 +67,33 @@
     color:pink;
     display:flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .contents{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap:44px;
+    
+    /* display: flex;
+    justify-content: space-between;
     flex-direction: row;
     align-content: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    
 }
-
-.content > img{
+.content{
+    width:250px;
+    cursor: pointer;
+}
+.content   img{
     width:250px;
     height:360px;
 }
 
 
-.content{
-    padding:44px;
-    cursor: pointer;
-}
+
 
 .id-delivery{
     display: flex;
@@ -103,7 +118,7 @@
 }
 
 
-.content>hr{
+hr{
     border-color: pink;
 }
 
@@ -119,24 +134,25 @@
     flex-direction: column;
 }
 
-.footer>.box-container{
+.footer .box-container{
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 45px;
 }
 
-.box-container>.box{
+.box-container .box{
 
     display: flex;
     flex-direction: column;
 }
 
-.box>.socials{
+.box .socials{
     display: flex;
     flex-direction: row;
 }
 
-.socials>div{
+.socials div{
     width:40px;
     height:40px;
     border: 1px solid black;
@@ -233,7 +249,7 @@
     transform: translate(-50%, -50%);
   }
 
-  .modal > *{
+  .modal > * {
     padding:20px;
   }
 
@@ -241,13 +257,16 @@
     display: flex;
     justify-content: flex-end;
   }
+  .exit-button button{
+    
+  }
 
   .input-modal{
     display: flex;
     flex-direction: column;
   }
 
-  .input-modal>*{
+  .input-modal *{
     padding: 10px 0px;
   }
 
@@ -284,8 +303,8 @@ input:focus, select:focus,textarea:focus{
     outline:none;
 }
 
-.login-button >button, .checkout-button>button{ 
-    padding:10px 45px;
+.login-button  button, .checkout-button button, .buy button, .buy-button{ 
+    padding:10px 45px !important;
     background-color: pink;
     border: none;
 }
@@ -303,11 +322,11 @@ input:focus, select:focus,textarea:focus{
     
 }
 
-.register>*,.contact>*{
+.register *,.contact *{
     margin:5px;
 }
 
-.register-button>button, .contact-button>button{
+.register-button button, .contact-button button{
     padding: 15px 120px;
     background-color: pink;
     border: none;
@@ -337,7 +356,7 @@ textarea{
     
 }
 
-.checkout-button>*{
+.checkout-button *{
     margin:5px;
 }
 
@@ -353,7 +372,7 @@ textarea{
     margin:15px;
 }
 
-.search-modal>.exit-button{
+.search-modal .exit-button{
     display: flex;
     justify-content: flex-end;
 }
@@ -365,9 +384,68 @@ textarea{
     margin-top:20%;
 }
 
-.search-input>button{
+.search-input button{
     padding:15px;
     background-color: black;
     color:white
 }
 
+.content-detail-container{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.main-interaction-point{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+
+.interaction{
+    display: flex;
+    flex-direction: column;
+    gap:45px;
+}
+
+.detail-nav{
+    font-size: smaller;
+    color:grey
+}
+
+
+
+.promo-details{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+.promo-image{
+    width:250px;
+    height:360px;
+}
+
+.shop-more{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    justify-content: center;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+
+.bottom   *{
+    text-align: center;
+
+}
+
+.buy {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width:200px;
+}
